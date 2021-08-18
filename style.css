@@ -5,8 +5,9 @@
 }
 
 .about-me {
-  margin: 60px auto;
+  margin: 90px auto;
   max-width: 800px;
+  padding-top: 40px;
 }
 
 nav {
@@ -40,6 +41,21 @@ p {
   line-height: 1.5;
 }
 
+.app {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.image {
+  padding: 20px;
+  max-width: 50%;
+}
+
+.app-info {
+  padding: 10px;
+}
+
 .app-title {
   text-align: left;
   margin: 10px 0;
@@ -50,12 +66,15 @@ p {
 }
 
 .app-link {
+  display: block;
   color: var(--secondary-color);
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   padding: 20px 15px;
   border-radius: 4px;
   text-decoration: none;
+  text-align: center;
+  width: 200px;
 }
 
 .about-link {
@@ -111,4 +130,69 @@ p {
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 28px;
+    padding: 10px 0;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .navigation-links {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .app {
+    flex-direction: column;
+  }
+
+  .image {
+    padding: 5px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .app-invert {
+    flex-direction: column-reverse;
+  }
+  .app-info {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .app-title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  p {
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .button {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  .app-link {
+    padding: 15px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    width: 100%;
+  }
 }
